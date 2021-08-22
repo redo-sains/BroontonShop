@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronton Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="navBar">
+        <div class="container" id="container">
+            <div id="content" class="content">
+                <div class="logo"><img alt="Brand Logo" src="../logo/brontoon logo.png"></div>
+                <div class="hamburger" onclick="clickHandle()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Cek Pesanan</li>
+                    <li>Log In</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="sell" class="py-5">
+        <div class=" sell-container container my-auto ">
+            <div class="upper-content">
+                <div class="sell-game-icon">
+                    <img class="sell-game-icon-img" width="200px" height="200px" src="../logo/icon_mobile_legend.jpg">
+                </div>
+                <div class="title">
+                    <h1 class="text-capitalize">mobile legend</h1>
+                    <h3 class="text-capitalize">paket regular</h3>
+                </div>
+                <div class="upper-content-text">
+                    <div class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, incidunt amet odio
+                        dolorem aut doloremque et in error iusto eius aliquid consequuntur porro voluptatem quibusdam
+                        adipisci sit harum illum, esse optio officia eos nam placeat ratione? Laboriosam temporibus
+                        perspiciatis quasi? Doloribus, nesciunt quasi. Eveniet dignissimos vero placeat labore atque
+                        voluptatibus veniam magni neque, maiores maxime consequuntur, molestiae excepturi quidem amet.
+                    </div>
+                </div>
+                <div class="buy mt-3">
+                    <div class="mb-3">
+                        <h1 class="text-uppercase ">jam buka 08:00-21:00 wib</h1>
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    </div>
+                    <form action="https://formsubmit.co/antonambara22@gmail.com" method="POST">
+                        <input type="hidden" name="_next"
+                            value="https://redo-sains.github.io/BroontonShop/app/sell/pembayaran/index.html">
+                        <input type="hidden" name="_subject" value="Data Pembeli Brontoon Shop">
+                        <input type="hidden" name="Paket" value="Mobile Legend Regular">
+                        <div class="sell-box  py-3 px-3 mb-3">
+                            <div class="step">
+                                <div class="step-box me-2">1</div>
+                                <h3 class="step-1 text-capitalize">lengkapi daa</h3>
+                            </div>
+                            <hr>
+                            <div class="input-id">
+                                <input id="input-user" type="text" placeholder="Masukan UserID" name="userId" required>
+                                <input type="text" placeholder="Masukan ServerID" name="serverId" required>
+                            </div>
+                            <button class="btn btn-success mt-3" type="submit">petunjuk</button>
+                        </div>
+                        <div class="sell-box  py-3 px-3 mb-3">
+                            <div class="step">
+                                <div class="step-box me-2">2</div>
+                                <h3 class="text-capitalize">pilih nominal</h3>
+
+                            </div>
+                            <hr>
+                            <div class="list-diamond mx-auto">
+                                <input class="d-none" type="radio" name="diamond" id="1" value="86" required>
+                                <label for="1">
+                                    <div>86 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="2" value="172">
+                                <label for="2">
+                                    <div>172 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="3" value="257">
+                                <label for="3">
+                                    <div>257 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="4" value="344">
+                                <label for="4">
+                                    <div>344 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="5" value="429">
+                                <label for="5">
+                                    <div>429 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="6" value="514">
+                                <label for="6">
+                                    <div>514 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="7" value="706">
+                                <label for="7">
+                                    <div>706 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="8" value="878">
+                                <label for="8">
+                                    <div>878 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="9" value="963">
+                                <label for="9">
+                                    <div>963 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="10" value="1412">
+                                <label for="10">
+                                    <div>1412 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="11" value="2195">
+                                <label for="11">
+                                    <div>2195 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="12" value="2901">
+                                <label for="12">
+                                    <div>2901 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="13" value="3688">
+                                <label for="13">
+                                    <div>3688 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="14" value="4394">
+                                <label for="14">
+                                    <div>4394 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="15" value="5532">
+                                <label for="15">
+                                    <div>5532 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="16" value="9288">
+                                <label for="16">
+                                    <div>9288 Diamond</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="17" value="Starlight Member">
+                                <label for="17">
+                                    <div>Starlight Member</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="18" value="Twilight Pass">
+                                <label for="18">
+                                    <div>Twilight Pass</div>
+                                </label>
+                                <input class="d-none" type="radio" name="diamond" id="19" value="Starlight Member Plus">
+                                <label for="19">
+                                    <div>Starlight Member Plus</div>
+                                </label>
+                            </div>
+                        </div>
+                        <input id="price" type="hidden" name="harga">
+                        <div class="sell-box py-3 px-3 mb-3">
+                            <div class="step">
+
+                                <div class="step-box me-2">3</div>
+                                <h3 class="text-capitalize">pilih metode pembayaran</h3>
+                            </div>
+                            <hr>
+                            <div class="metode-pembayaran mx-auto">
+                                <input class="d-none" type="radio" name="pembayaran" id="dana" value="dana" required>
+                                <label for="dana">
+                                    <div class="pembayaran">
+                                        <img class="logo-panjang" height="80%" width="200rem"
+                                            src="../logo/Logo DANA (SVG-1080p) - FileVector69.svg" alt="dana">
+                                    </div>
+                                    <div class="harga">
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="metode-pembayaran mx-auto">
+                                <input class="d-none" type="radio" name="pembayaran" id="gopay" value="gopay">
+                                <label for="gopay">
+                                    <div class="pembayaran">
+                                        <img class="logo-panjang" height="80%" width="200rem"
+                                            src="../logo/Logo GoPay (SVG-1080p) - FileVector69.svg" alt="gopay">
+                                    </div>
+                                    <div class="harga">
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="metode-pembayaran mx-auto">
+                                <input class="d-none" type="radio" name="pembayaran" id="ovo" value="ovo">
+                                <label for="ovo">
+                                    <div class="pembayaran">
+                                        <img class="logo-pendek" height="80%" width="80rem"
+                                            src="../logo/OVO Logo Vector.png" alt="ovo">
+                                    </div>
+                                    <div class="harga">
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="metode-pembayaran mx-auto">
+                                <input class="d-none" type="radio" name="pembayaran" id="shopeepay" value="shopeepay">
+                                <label for="shopeepay">
+                                    <div class="pembayaran">
+                                        <img class="logo-pendek" height="80%" width="200rem"
+                                            src="../logo/ShopeePay Logo (SVG-1080p) - Vector69Com.svg" alt="shopeepay">
+                                    </div>
+                                    <div class="harga">
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="metode-pembayaran mx-auto">
+                                <input class="d-none" type="radio" name="pembayaran" id="linkaja" value="linkaja">
+                                <label for="linkaja">
+                                    <div class="pembayaran">
+                                        <img class="logo-pendek" height="80%" width="200rem"
+                                            src="../logo/Logo LinkAja (SVG-1080p) - FileVector69.svg" alt="LinkAja">
+                                    </div>
+                                    <div class="harga">
+
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="sell-box py-3 px-3 mb-3">
+                            <div class="step">
+
+                                <div class="step-box me-2">4</div>
+                                <h3 class="text-capitalize">masukan nomor whatsApp</h3>
+                            </div>
+                            <hr>
+                            <div class="input-wa">
+                                <input class="me-2" type="text" placeholder="08xxxxxxxxxx" name="noWa" required>
+                            </div>
+                        </div>
+                        <div class="py-3 px-3 mb-3">
+                            <button class="btn btn-success" type="submit">Beli Sekarang</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="content">
+            <div class="info"></div>
+            <div class="copyright">Copyright 2021 Broonton Shop | Created By Redo Sains </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
