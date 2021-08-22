@@ -1,0 +1,364 @@
+/** @format */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navBar {
+  width: 100vw;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 10px #fff;
+  -webkit-box-shadow: 1px 5px 10px rgb(0, 0, 0, 0.4);
+}
+
+#navBar .container {
+  background-color: white;
+
+  width: 80%;
+  height: 15vh;
+  padding: 4px 3%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.container .content {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .menu {
+  height: 15vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+  width: auto;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger i:before {
+  font-size: 40px;
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu ul li {
+  list-style: none;
+  letter-spacing: 1px;
+}
+
+.menu ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+.menu ul li:nth-child(1)::before {
+  content: "\f015";
+}
+
+.menu ul li:nth-child(2)::before {
+  content: "\f002";
+}
+
+.menu ul li:nth-child(3)::before {
+  content: "\f2f6";
+}
+
+#footer {
+  width: auto;
+  height: auto;
+}
+
+#footer .content {
+  width: 100vw;
+  height: 40vh;
+}
+
+.content .info {
+  width: 100%;
+  height: 75%;
+  background-color: orange;
+}
+
+.content .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.content .copyright:before {
+  content: "\f1f9";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+.sell-container {
+  min-width: 20rem;
+  max-width: 60rem;
+}
+
+.sell-box {
+  border-radius: 5px;
+  border: 1.5px solid rgba(100, 105, 110, 0.6);
+}
+
+.sell-game-icon {
+  margin-bottom: 0.8rem;
+}
+
+.sell-game-icon-img {
+  border-radius: 10px;
+}
+
+.list-diamond {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+.list-diamond label div::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 3px;
+  content: "\f3a5";
+  color: rgb(71, 186, 212);
+}
+
+.list-diamond label {
+  display: flex;
+  padding: 4px 6px;
+
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orangered;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+
+.input-id {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+
+#input-user {
+  margin-right: 4rem;
+}
+
+.input-wa input {
+  width: 20rem;
+}
+
+input[type="text"] {
+  min-width: 7rem;
+  border-radius: 5px;
+  border: 1.5px solid rgba(100, 105, 110, 0.7);
+  padding: 2px 6px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  outline: 3px solid rgba(85, 179, 242, 0.6);
+}
+
+input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: rgba(29, 29, 131, 0.6);
+}
+
+.step {
+  display: flex;
+}
+
+.step-box {
+  background-color: royalblue;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.metode-pembayaran {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.metode-pembayaran .pembayaran {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 15rem;
+}
+
+.metode-pembayaran label {
+  display: flex;
+  align-items: center;
+  border: 2px solid cyan;
+  border-radius: 10px;
+}
+
+.metode-pembayaran .pembayaran {
+  display: flex;
+  position: relative;
+  left: 1rem;
+  align-items: center;
+}
+
+.metode-pembayaran .harga {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 6rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  transform: translateX(-50%);
+  background-color: orangered;
+  border-radius: 5px;
+}
+
+.harga-active {
+  display: flex !important;
+}
+
+@media screen and (max-width: 768px) {
+  .list-diamond {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #input-user {
+    margin-right: 2rem;
+  }
+
+  .input-id {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #input-user {
+    margin-right: 1rem;
+  }
+
+  .input-id input {
+    font-size: 0.8rem;
+  }
+
+  #main {
+    padding: 20px 0;
+  }
+
+  #navBar .container {
+    height: 10vh;
+  }
+
+  .container .content {
+    height: 11vh;
+  }
+
+  .container .menu {
+    height: 11vh;
+  }
+
+  .menu ul li {
+    font-size: 0.8rem;
+  }
+
+  .hamburger i:before {
+    font-size: 30px;
+  }
+
+  .input-wa {
+    display: grid;
+  }
+
+  .input-wa input {
+    width: auto;
+  }
+
+  .metode-pembayaran .pembayaran {
+    width: 6rem;
+    height: 5rem;
+  }
+
+  .logo-panjang {
+    width: 7rem !important;
+  }
+
+  .logo-pendek {
+    width: 5rem !important;
+  }
+
+  .metode-pembayaran .harga {
+    font-size: 0.7rem;
+    width: 4.2rem;
+    height: 1.2rem;
+  }
+
+  .sell-game-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sell-game-icon-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .list-diamond label div {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .list-diamond {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-panjang {
+    width: 5rem !important;
+  }
+
+  .logo-pendek {
+    width: 3rem !important;
+  }
+}
